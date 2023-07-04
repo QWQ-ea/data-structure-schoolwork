@@ -1,0 +1,5 @@
+﻿  supermaket.cpp
+D:\项目\广义表\supermaket.cpp(315,29): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\项目\广义表\supermaket.cpp(317,29): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\项目\广义表\supermaket.cpp(319,29): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  广义表.vcxproj -> D:\项目\广义表\x64\Debug\广义表.exe

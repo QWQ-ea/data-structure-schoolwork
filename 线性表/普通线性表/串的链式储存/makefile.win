@@ -1,0 +1,29 @@
+# Project: string
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestString.o
+LINKOBJ  = Dev_Debug/TestString.o
+CLEANOBJ  =  Dev_Debug\TestString.o Dev_Debug\string.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/string.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestString.o: TestString.cpp Assistance.h Node.h String.h LinkList.h
+	$(CPP) -c D:/CS/数据结构/Chapter5/string/TestString.cpp -o Dev_Debug/TestString.o $(CXXFLAGS) 

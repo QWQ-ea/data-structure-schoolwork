@@ -1,0 +1,122 @@
+[Project]
+FileName = hash_table.dev
+Name = hash_table
+UnitCount = 3
+Type = 1
+Ver = 3
+ObjFiles = 
+Includes = 
+Libs = 
+PrivateResource = 
+ResourceIncludes = 
+MakeIncludes = 
+Compiler = 
+CppCompiler = 
+Linker = 
+IsCpp = 1
+Icon = 
+ExeOutput = Dev_Debug
+ObjectOutput = Dev_Debug
+OverrideOutput = 0
+OverrideOutputName = 
+HostApplication = 
+Folders = 
+CommandLine = 
+UseCustomMakefile = 0
+CustomMakefile = 
+IncludeVersionInfo = 0
+SupportXPThemes = 0
+CompilerSet = 0
+Bins = 
+ResourceCommand = 
+LogOutput = 
+LogOutputEnabled = 0
+UsePrecompiledHeader = 0
+PrecompiledHeader = 
+StaticLink = 1
+AddCharset = 1
+ExecEncoding = SYSTEM
+Encoding = SYSTEM
+ModelType = 1
+ClassBrowserType = 0
+AllowParallelBuilding = false
+ParellelBuildingJobs = 0
+UseUTF8 = 0
+
+
+[VersionInfo]
+Major = 0
+Minor = 1
+Release = 1
+Build = 1
+LanguageID = 1033
+CharsetID = 1252
+CompanyName = 
+FileVersion = 0.1
+FileDescription = Developed using the Dev-C++ IDE
+InternalName = 
+LegalCopyright = 
+LegalTrademarks = 
+OriginalFilename = hash_table.exe
+ProductName = hash_table
+ProductVersion = 0.1.1.1
+AutoIncBuildNr = 0
+SyncProduct = 0
+
+
+[Unit1]
+FileName = TestClosedHashTable.cpp
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = gbk
+
+
+[Unit2]
+FileName = ClosedHashTable.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = gbk
+
+
+[Unit3]
+FileName = Assistance.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = gbk
+
+
+[CompilerSettings]
+cc_cmd_opt_abort_on_error = 
+cc_cmd_opt_check_iso_conformance = 
+cc_cmd_opt_debug_info = 
+cc_cmd_opt_inhibit_all_warning = 
+cc_cmd_opt_instruction = 
+cc_cmd_opt_optimize = 
+cc_cmd_opt_pointer_size = 
+cc_cmd_opt_profile_info = 
+cc_cmd_opt_std = 
+cc_cmd_opt_syntax_only = 
+cc_cmd_opt_warning_all = 
+cc_cmd_opt_warning_as_error = 
+cc_cmd_opt_warning_extra = 
+link_cmd_opt_no_console = 
+link_cmd_opt_no_link_stdlib = 
+link_cmd_opt_strip_exe = 

@@ -1,0 +1,29 @@
+# Project: 研讨二
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/main.o
+LINKOBJ  = Dev_Debug/main.o
+CLEANOBJ  =  Dev_Debug\main.o Dev_Debug\研讨二.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/研讨二.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/main.o: main.cpp LinkedQueue.h Cluster.h task.h
+	$(CPP) -c D:/研讨二/main.cpp -o Dev_Debug/main.o $(CXXFLAGS) 

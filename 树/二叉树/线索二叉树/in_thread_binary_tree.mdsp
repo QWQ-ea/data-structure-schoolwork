@@ -1,0 +1,102 @@
+[Project]
+name=in_thread_binary_tree
+type=0
+defaultConfig=0
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Debug
+outputFilesDirectory=Debug
+compilerPreprocessor=
+extraCompilerOptions=
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=Debug\in_thread_binary_tree.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Release
+outputFilesDirectory=Release
+compilerPreprocessor=
+extraCompilerOptions=
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=0
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=2
+
+// linker
+libraryPath=
+outputFilename=Release\in_thread_binary_tree.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=1
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=.\TestInThreadBinaryTree.cpp
+[Header]
+1=.\Assistance.h
+2=.\BinaryTree.h
+3=.\BinTreeNode.h
+4=.\InThreadBinaryTree.h
+5=.\LinkQueue.h
+6=.\Node.h
+7=.\ThreadBinTreeNode.h
+[Resource]
+[Other]
+[History]
+.\TestInThreadBinaryTree.cpp, 0
+.\Assistance.h, 0
+.\BinaryTree.h, 0
+.\BinTreeNode.h, 0
+.\InThreadBinaryTree.h, 0
+.\LinkQueue.h, 0
+.\Node.h, 0
+.\ThreadBinTreeNode.h, 0

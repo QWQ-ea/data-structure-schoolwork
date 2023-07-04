@@ -1,0 +1,29 @@
+# Project: in_thread_binary_tree
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestInThreadBinaryTree.o
+LINKOBJ  = Dev_Debug/TestInThreadBinaryTree.o
+CLEANOBJ  =  Dev_Debug\TestInThreadBinaryTree.o Dev_Debug\in_thread_binary_tree.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/in_thread_binary_tree.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestInThreadBinaryTree.o: TestInThreadBinaryTree.cpp InThreadBinaryTree.h BinaryTree.h LinkQueue.h ThreadBinTreeNode.h Assistance.h BinTreeNode.h Node.h
+	$(CPP) -c D:/CS/数据结构/Chapter6/in_thread_binary_tree/TestInThreadBinaryTree.cpp -o Dev_Debug/TestInThreadBinaryTree.o $(CXXFLAGS) 

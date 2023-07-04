@@ -1,0 +1,29 @@
+# Project: KMP
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestKMP.o
+LINKOBJ  = Dev_Debug/TestKMP.o
+CLEANOBJ  =  Dev_Debug\TestKMP.o Dev_Debug\KMP.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/KMP.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestKMP.o: TestKMP.cpp Node.h KMP.h LinkList.h Assistance.h String.h
+	$(CPP) -c D:/CS/数据结构/Chapter5/KMP/TestKMP.cpp -o Dev_Debug/TestKMP.o $(CXXFLAGS) 

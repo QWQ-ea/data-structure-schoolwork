@@ -1,0 +1,35 @@
+#ifndef MEDIANFINDER_H
+#define MEDIANFINDER_H
+#include "Heap.h"
+template<class ElemType> class MedianFinder {
+private:
+	MinHeap<ElemType> ha;
+	MaxHeap<ElemType> hb;
+public:
+	MedianFinder() {
+		
+	}
+	~MedianFinder() {
+		
+	}
+	void Makeheap(ElemType num)
+	{
+		if(ha.SizeOfHeap()==hb.SizeOfHeap())
+		{
+			hb.Insert(num);
+			ha.Insert(hb.GetTop());
+			hb.DeleteTop();	
+		}
+		else 
+		{
+			ha.Insert(num);
+			hb.Insert(ha.GetTop());
+			ha.DeleteTop();
+		}
+	}
+	ElemType findMedian()
+	{
+		return ha.SizeOfHeap()==hb.SizeOfHeap()?(ha.GetTop()+hb.GetTop())/2:ha.GetTop();
+	}
+};
+#endif

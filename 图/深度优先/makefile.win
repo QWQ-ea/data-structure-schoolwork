@@ -1,0 +1,29 @@
+# Project: 深度优先
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestDFS.o
+LINKOBJ  = Dev_Debug/TestDFS.o
+CLEANOBJ  =  Dev_Debug\TestDFS.o Dev_Debug\深度优先.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/深度优先.exe
+CXXFLAGS = $(CXXINCS)  -fopenmp -fexec-charset=GBK -finput-charset=UTF-8
+CFLAGS   = $(INCS)  -fopenmp -fexec-charset=GBK -finput-charset=UTF-8
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestDFS.o: TestDFS.cpp Assistance.h DFS.h AdjMatrixUndirGraph.h
+	$(CPP) -c D:/CS/数据结构/实验2/深度优先/TestDFS.cpp -o Dev_Debug/TestDFS.o $(CXXFLAGS) 

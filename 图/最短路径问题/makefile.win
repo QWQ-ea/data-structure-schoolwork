@@ -1,0 +1,34 @@
+# Project: 最短路径问题
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 最短路径问题_private.res
+OBJ      = Test.o $(RES)
+LINKOBJ  = Test.o $(RES)
+CLEANOBJ  =  Test.o 最短路径问题_private.res 最短路径问题.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = 最短路径问题.exe
+CXXFLAGS = $(CXXINCS)  -ansi -g3 -O2 -pipe -fopenmp -fexec-charset=GBK -finput-charset=UTF-8 -D__DEBUG__
+CFLAGS   = $(INCS)  -ansi -g3 -O2 -pipe -fopenmp -fexec-charset=GBK -finput-charset=UTF-8 -D__DEBUG__
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Test.o: Test.cpp AdjMatrixUndirNetwork.h Floyd.h BellmanFord.h Dijkstra.h Assistance.h
+	$(CPP) -c D:/CS/数据结构/实验2/最短路径问题/Test.cpp -o Test.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+最短路径问题_private.res: 最短路径问题_private.rc 
+	$(WINDRES) -i 最短路径问题_private.rc --input-format=rc -o 最短路径问题_private.res -O coff 
+

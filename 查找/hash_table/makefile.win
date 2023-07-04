@@ -1,0 +1,30 @@
+# Project: hash_table
+# Makefile created by Red Panda C++ 2.21
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestClosedHashTable.o
+LINKOBJ  = Dev_Debug/TestClosedHashTable.o
+CLEANOBJ  =  Dev_Debug\TestClosedHashTable.o Dev_Debug\hash_table.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/hash_table.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestClosedHashTable.o: TestClosedHashTable.cpp ClosedHashTable.h Assistance.h
+	$(CPP) -c TestClosedHashTable.cpp -o Dev_Debug/TestClosedHashTable.o $(CXXFLAGS) 

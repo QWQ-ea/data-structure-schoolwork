@@ -1,0 +1,35 @@
+# Project: ÅÅÐò
+# Makefile created by Red Panda C++ 2.21
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = ÅÅÐò_private.res
+OBJ      = main.o $(RES)
+LINKOBJ  = main.o ÅÅÐò_private.res
+CLEANOBJ  =  main.o  ÅÅÐò_private.res ÅÅÐò.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = ÅÅÐò.exe
+CXXFLAGS = $(CXXINCS)  -g3 -w -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -w -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp select.h radix.h merge.h insert.h hanshu.h swap.h
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+ÅÅÐò_private.res: ÅÅÐò_private.rc 
+	$(WINDRES) -i ÅÅÐò_private.rc --input-format=rc -o ÅÅÐò_private.res -O coff $(WINDRESFLAGS) 
+

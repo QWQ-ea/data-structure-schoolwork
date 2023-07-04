@@ -1,0 +1,29 @@
+# Project: sq_binary_tree
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestSqBinaryTree.o
+LINKOBJ  = Dev_Debug/TestSqBinaryTree.o
+CLEANOBJ  =  Dev_Debug\TestSqBinaryTree.o Dev_Debug\sq_binary_tree.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/sq_binary_tree.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestSqBinaryTree.o: TestSqBinaryTree.cpp Node.h LinkQueue.h Assistance.h SqBinaryTree.h
+	$(CPP) -c D:/CS/数据结构/Chapter6/sq_binary_tree/TestSqBinaryTree.cpp -o Dev_Debug/TestSqBinaryTree.o $(CXXFLAGS) 

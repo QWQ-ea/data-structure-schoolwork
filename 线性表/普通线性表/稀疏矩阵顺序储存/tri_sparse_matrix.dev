@@ -1,0 +1,116 @@
+[Project]
+FileName = tri_sparse_matrix.dev
+Name = tri_sparse_matrix
+UnitCount = 4
+Type = 1
+Ver = 3
+ObjFiles = 
+Includes = 
+Libs = 
+PrivateResource = 
+ResourceIncludes = 
+MakeIncludes = 
+Compiler = 
+CppCompiler = 
+Linker = 
+IsCpp = 1
+Icon = 
+ExeOutput = .\Dev_Debug\
+ObjectOutput = .\Dev_Debug\
+OverrideOutput = 0
+OverrideOutputName = 
+HostApplication = 
+Folders = 
+CommandLine = 
+UseCustomMakefile = 0
+CustomMakefile = 
+IncludeVersionInfo = 0
+SupportXPThemes = 0
+CompilerSet = 1
+Bins = 
+LogOutput = 
+LogOutputEnabled = 0
+UsePrecompiledHeader = 0
+PrecompiledHeader = 
+CompilerSetType = 1
+StaticLink = 0
+AddCharset = 1
+ExecEncoding = SYSTEM
+Encoding = AUTO
+ModelType = 1
+UseUTF8 = 0
+
+
+[VersionInfo]
+Major = 0
+Minor = 1
+Release = 1
+Build = 1
+LanguageID = 1033
+CharsetID = 1252
+CompanyName = 
+FileVersion = 
+FileDescription = Developed using the Dev-C++ IDE
+InternalName = 
+LegalCopyright = 
+LegalTrademarks = 
+OriginalFilename = 
+ProductName = 
+ProductVersion = 
+AutoIncBuildNr = 0
+SyncProduct = 0
+
+
+[Unit1]
+FileName = TestTriSparseMatrix.cpp
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+
+
+[Unit2]
+FileName = Assistance.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+
+
+[Unit3]
+FileName = Triple.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+
+
+[Unit4]
+FileName = TriSparseMatrix.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+
+
+[CompilerSettings]
+cc_cmd_opt_debug_info = on
+cc_cmd_opt_use_pipe = on
+cc_cmd_opt_warning_all = on
+cc_cmd_opt_warning_extra = on

@@ -1,0 +1,29 @@
+# Project: mineheap
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestMineHeap.o
+LINKOBJ  = Dev_Debug/TestMineHeap.o
+CLEANOBJ  =  Dev_Debug\TestMineHeap.o Dev_Debug\mineheap.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/mineheap.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestMineHeap.o: TestMineHeap.cpp MineHeap.h Assistance.h
+	$(CPP) -c D:/CS/数据结构/Chapter6/mineheap/TestMineHeap.cpp -o Dev_Debug/TestMineHeap.o $(CXXFLAGS) 

@@ -1,0 +1,32 @@
+# Project: 广义表
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/supermaket.o Dev_Debug/TestGenList.o
+LINKOBJ  = Dev_Debug/supermaket.o Dev_Debug/TestGenList.o
+CLEANOBJ  =  Dev_Debug\supermaket.o Dev_Debug\TestGenList.o Dev_Debug\广义表.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/广义表.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/supermaket.o: supermaket.cpp GenNode.h GenList.h Assistance.h
+	$(CPP) -c D:/CS/广义表/supermaket.cpp -o Dev_Debug/supermaket.o $(CXXFLAGS) 
+
+Dev_Debug/TestGenList.o: TestGenList.cpp
+	$(CPP) -c D:/CS/广义表/TestGenList.cpp -o Dev_Debug/TestGenList.o $(CXXFLAGS) 

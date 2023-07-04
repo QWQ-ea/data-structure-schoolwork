@@ -1,0 +1,79 @@
+{
+    "breakpoints": [
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "swap.h",
+            "line": 22,
+            "timestamp": "1684243675480"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "swap.h",
+            "line": 24,
+            "timestamp": "1684243762162"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "insert.h",
+            "line": 35,
+            "timestamp": "1684248314186"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "insert.h",
+            "line": 32,
+            "timestamp": "1684248314773"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "insert.h",
+            "line": 51,
+            "timestamp": "1684249092253"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "main.cpp",
+            "line": 21,
+            "timestamp": "1684309607514"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "main.cpp",
+            "line": 23,
+            "timestamp": "1684309610896"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "main.cpp",
+            "line": 24,
+            "timestamp": "1684309612244"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "main.cpp",
+            "line": 89,
+            "timestamp": "1684310700473"
+        }
+    ],
+    "timestamp": "1684887437987",
+    "watchvars": [
+    ]
+}

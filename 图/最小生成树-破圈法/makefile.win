@@ -1,0 +1,30 @@
+# Project: 最小生成树-破圈法
+# Makefile created by Red Panda C++ 2.21
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestPoQuan.o
+LINKOBJ  = Dev_Debug/TestPoQuan.o
+CLEANOBJ  =  Dev_Debug\TestPoQuan.o Dev_Debug\kruskal.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/kruskal.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestPoQuan.o: TestPoQuan.cpp AdjMatrixUndirNetwork.h Assistance.h
+	$(CPP) -c TestPoQuan.cpp -o Dev_Debug/TestPoQuan.o $(CXXFLAGS) 

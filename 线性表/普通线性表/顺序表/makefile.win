@@ -1,0 +1,32 @@
+# Project: seq_list
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestSeqList.o Dev_Debug/Point2D.o
+LINKOBJ  = Dev_Debug/TestSeqList.o Dev_Debug/Point2D.o
+CLEANOBJ  =  Dev_Debug\TestSeqList.o Dev_Debug\Point2D.o Dev_Debug\seq_list.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/seq_list.exe
+CXXFLAGS = $(CXXINCS)  -fopenmp
+CFLAGS   = $(INCS)  -fopenmp
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestSeqList.o: TestSeqList.cpp Assistance.h SeqList.h
+	$(CPP) -c D:/CS/数据结构/线性表/普通线性表/顺序表/TestSeqList.cpp -o Dev_Debug/TestSeqList.o $(CXXFLAGS) 
+
+Dev_Debug/Point2D.o: ../../第一周/实验0/Point2D.cpp
+	$(CPP) -c D:/CS/数据结构/线性表/第一周/实验0/Point2D.cpp -o Dev_Debug/Point2D.o $(CXXFLAGS) 

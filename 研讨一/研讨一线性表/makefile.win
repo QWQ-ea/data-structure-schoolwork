@@ -1,0 +1,29 @@
+# Project: 研讨一线性表
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/test.o
+LINKOBJ  = Dev_Debug/test.o
+CLEANOBJ  =  Dev_Debug\test.o Dev_Debug\研讨一线性表.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/研讨一线性表.exe
+CXXFLAGS = $(CXXINCS)  -fopenmp
+CFLAGS   = $(INCS)  -fopenmp
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/test.o: test.cpp Node,LinkList.h
+	$(CPP) -c D:/CS/数据结构/研讨一/研讨一线性表/test.cpp -o Dev_Debug/test.o $(CXXFLAGS) 

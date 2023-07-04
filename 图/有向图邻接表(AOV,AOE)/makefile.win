@@ -1,0 +1,30 @@
+# Project: adj_list_dir_network
+# Makefile created by Red Panda C++ 2.21
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestAdjListDirNetwork.o
+LINKOBJ  = Dev_Debug/TestAdjListDirNetwork.o
+CLEANOBJ  =  Dev_Debug\TestAdjListDirNetwork.o Dev_Debug\adj_list_dir_network.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/adj_list_dir_network.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestAdjListDirNetwork.o: TestAdjListDirNetwork.cpp AdjListDirNetworkArc.h LinkQueue.h Node.h AdjListDirNetwork.h Assistance.h LinkStack.h AdjListDirNetworkVex.h
+	$(CPP) -c TestAdjListDirNetwork.cpp -o Dev_Debug/TestAdjListDirNetwork.o $(CXXFLAGS) 

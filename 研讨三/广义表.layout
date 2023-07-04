@@ -1,0 +1,38 @@
+[Editors]
+Order = 2,3,4,1,0
+Focused = 3
+
+
+[Editor_0]
+CursorCol = 19
+CursorRow = 309
+TopLine = 298
+LeftChar = 1
+
+
+[Editor_1]
+CursorCol = 1
+CursorRow = 1
+TopLine = 1
+LeftChar = 1
+
+
+[Editor_2]
+CursorCol = 1
+CursorRow = 1
+TopLine = 1
+LeftChar = 1
+
+
+[Editor_3]
+CursorCol = 42
+CursorRow = 20
+TopLine = 4
+LeftChar = 1
+
+
+[Editor_4]
+CursorCol = 1
+CursorRow = 1
+TopLine = 16
+LeftChar = 1

@@ -1,0 +1,29 @@
+# Project: adj_matrix_undir_graph
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestAdjMatrixUndirGraph.o
+LINKOBJ  = Dev_Debug/TestAdjMatrixUndirGraph.o
+CLEANOBJ  =  Dev_Debug\TestAdjMatrixUndirGraph.o Dev_Debug\adj_matrix_undir_graph.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/adj_matrix_undir_graph.exe
+CXXFLAGS = $(CXXINCS)  -fopenmp -fexec-charset=GBK -finput-charset=UTF-8
+CFLAGS   = $(INCS)  -fopenmp -fexec-charset=GBK -finput-charset=UTF-8
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestAdjMatrixUndirGraph.o: TestAdjMatrixUndirGraph.cpp Node.h LinkStack.h Assistance.h AdjMatrixUndirGraph.h
+	$(CPP) -c D:/CS/数据结构/实验2/无向图邻接矩阵/TestAdjMatrixUndirGraph.cpp -o Dev_Debug/TestAdjMatrixUndirGraph.o $(CXXFLAGS) 

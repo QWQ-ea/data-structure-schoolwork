@@ -1,0 +1,49 @@
+[
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/CS/数据结构/实验2/噪声问题/Node.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/CS/数据结构/实验2/噪声问题/LinkStack.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 142
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/CS/数据结构/实验2/噪声问题/AdjMatrixUndirNetwork.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 410
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/CS/数据结构/实验2/噪声问题/Assistance.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 112
+    },
+    {
+        "caretX": 12,
+        "caretY": 12,
+        "filename": "D:/CS/数据结构/实验2/噪声问题/main.cpp",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 12
+    }
+]

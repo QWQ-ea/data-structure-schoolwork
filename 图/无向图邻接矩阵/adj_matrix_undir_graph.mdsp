@@ -1,0 +1,92 @@
+[Project]
+name=adj_matrix_undir_graph
+type=0
+defaultConfig=0
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Debug
+outputFilesDirectory=Debug
+compilerPreprocessor=
+extraCompilerOptions=
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=Debug\adj_matrix_undir_graph.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Release
+outputFilesDirectory=Release
+compilerPreprocessor=
+extraCompilerOptions=
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=0
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=2
+
+// linker
+libraryPath=
+outputFilename=Release\adj_matrix_undir_graph.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=1
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=.\TestAdjMatrixUndirGraph.cpp
+[Header]
+1=.\AdjMatrixUndirGraph.h
+2=.\Assistance.h
+[Resource]
+[Other]
+[History]
+.\TestAdjMatrixUndirGraph.cpp, 0
+.\AdjMatrixUndirGraph.h, 0
+.\Assistance.h, 0

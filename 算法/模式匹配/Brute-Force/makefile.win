@@ -1,0 +1,29 @@
+# Project: Brute-Force
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Dev_Debug/TestBruteForce.o
+LINKOBJ  = Dev_Debug/TestBruteForce.o
+CLEANOBJ  =  Dev_Debug\TestBruteForce.o Dev_Debug\Brute-Force.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Dev_Debug/Brute-Force.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Dev_Debug/TestBruteForce.o: TestBruteForce.cpp Node.h String.h Assistance.h LinkList.h Brute-Force.h
+	$(CPP) -c D:/CS/数据结构/Chapter5/Brute-Force/TestBruteForce.cpp -o Dev_Debug/TestBruteForce.o $(CXXFLAGS) 
